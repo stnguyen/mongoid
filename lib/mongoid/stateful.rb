@@ -80,6 +80,7 @@ module Mongoid
     # @since 4.0.0
     def readonly?
       __selected_fields != nil
+      return false
     end
 
     # Determine if the document can be set.
